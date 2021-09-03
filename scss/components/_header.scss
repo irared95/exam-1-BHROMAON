@@ -1,0 +1,96 @@
+.header {
+    background-color: $light-blue;
+    padding: 27px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    @include breakpoint($mobile-bp) {
+        padding: 10px 0;
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &.active {
+        .nav {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+        .burger {
+            span {
+                background-color: transparent;
+            }
+            &:after {
+                top: 21px;
+                transform: rotate(45deg);
+            }
+            &:before {
+                top: 21px;
+                transform: rotate(-45deg);
+            }
+        }
+        .nav {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+    }
+}
+
+.nav {
+    &__menu {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    &__item {
+        margin-right: 40px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: $aleo-regular, $ss;
+        color: $second-white;
+        line-height: 18px;
+        transition: all .2s linear;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    @include breakpoint($mobile-bp) {
+        display: flex;
+        position: absolute;
+        background-color: $dark-blue;
+        padding: 35px;
+        top: 0;
+        right: 0;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: all ease-in-out 0.3s;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+        &__menu {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        &__item {
+            margin-right: 0px;
+            text-transform: uppercase;
+        }
+        &__link {
+            padding: 10px;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.tour {
+    background-color: rgba(35, 35, 35, .9);
+    max-width: 540px;
+    width: 100%;
+    padding: 50px 30px;
+    @include breakpoint($mobile-bp) {
+        padding: 25px 15px;
+    }
+    &__text {
+        font-size: 20px;
+        font-family: $josefinsans-regular, $ss;
+        color: $second-white;
+        line-height: 22px;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+    &__title {
+        font-size: 20px;
+        font-family: $josefinsans-regular, $ss;
+        color: $second-white;
+        text-transform: uppercase;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+    &__desc {
+        font-size: 16px;
+        font-family: $josefinsans-regular, $ss;
+        color: $second-white;
+        line-height: 22px;
+        margin-bottom: 48px;
+        max-width: 462px;
+        text-align: justify;
+    }
+}

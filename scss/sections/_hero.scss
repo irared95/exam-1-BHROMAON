@@ -1,0 +1,102 @@
+.hero {
+    background-image: url(/image/hero-bg.png);
+    background-size: cover;
+    height: 100vh;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 100px;
+        width: 100%;
+    }
+    &__title {
+        font-size: 48px;
+        font-family: $josefinsans-bold;
+        color: $white;
+        text-transform: uppercase;
+        line-height: 50px;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        @include breakpoint($mobile-bp) {
+            font-size: 40px;
+            line-height: 42px;
+        }
+    }
+    &__text {
+        font-size: 22px;
+        font-family: $josefinsans-regular;
+        color: $white;
+        line-height: 24px;
+        margin-bottom: 50px;
+        letter-spacing: 4.5px;
+        @include breakpoint($mobile-bp) {
+            letter-spacing: 0;
+        }
+    }
+    &__form {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 110px;
+        max-width: 650px;
+        border: 2px solid $white;
+        @include breakpoint($mobile-bp) {
+            margin-bottom: 40px;
+        }
+    }
+    &__input {
+        width: 100%;
+        padding: 0 10px;
+        border: 1px solid $black;
+        font-family: $josefinsans-regular, $ss;
+        color: $second-black;
+        font-size: 17px;
+        min-height: 60px;
+        border: 1px solid transparent;
+        transition: all .3s linear;
+        @include breakpoint($mobile-bp) {
+            padding: 0 5px;
+            min-height: 44px;
+        }
+        &:hover,
+        &:focus {
+            border: 1px solid $dark-blue;
+        }
+        &::placeholder {
+            font-family: $josefinsans-regular, $ss;
+            color: $light-grey;
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-align: center;
+            @include breakpoint($mobile-bp) {
+                letter-spacing: 0;
+            }
+        }
+    }
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: $josefinsans-regular;
+    color: $second-white;
+    line-height: 16px;
+    letter-spacing: 4px;
+    &__text {
+        margin-bottom: 14px;
+    }
+    &__img {
+        width: 14px;
+    }
+}

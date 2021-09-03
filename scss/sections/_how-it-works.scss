@@ -1,0 +1,64 @@
+.how-it-works {
+    background-color: $second-black;
+    padding: 0 0 100px;
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        background-image: url(../../image/decor-circle.png), url(../../image/decor-circle.png);
+        padding-top: 100px;
+        background-repeat: no-repeat;
+        background-position: left 28% top 46px, right 28% top 46px;
+        background-size: 24%;
+        @include breakpoint($mobile-bp) {
+            background-image: none;
+            padding-top: 0;
+        }
+    }
+    &__item {
+        max-width: 220px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+    &__link {
+        display: block;
+        transition: all 0.2s linear;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    &__title {
+        font-size: 33px;
+        font-family: $aleo-regular;
+        color: $second-white;
+        line-height: 38px;
+        display: inline-block;
+    }
+    &__image {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .how-it-works {
+        padding: 60px 0;
+        &__list {
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column;
+        }
+        &__item {
+            max-width: 100%;
+            margin-bottom: 40px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &__image {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+    }
+}

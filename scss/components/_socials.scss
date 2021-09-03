@@ -1,0 +1,31 @@
+.socials {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    &__item {
+        padding-right: 21px;
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 16px;
+        width: 100%;
+        path {
+            fill: #fff;
+            transition: fill .2s linear;
+        }
+        svg {
+            width: 100%;
+        }
+        &:hover {
+            path {
+                fill: $light-blue;
+            }
+        }
+    }
+}

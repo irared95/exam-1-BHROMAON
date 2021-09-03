@@ -1,0 +1,23 @@
+        @font-face {
+            font-family: 'JosefinSans Bold';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(../fonts/JosefinSans/JosefinSans-Bold.woff2) format('woff2'), url(../fonts/JosefinSans/JosefinSans-Bold.woff) format('woff'), url(../fonts/JosefinSans/JosefinSans-Bold.ttf) format('truetype');
+        }
+        
+        @font-face {
+            font-family: 'JosefinSans Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(../fonts/JosefinSans/JosefinSans-Regular.woff2) format('woff2'), url(../fonts/JosefinSans/JosefinSans-Regular.woff) format('woff'), url(../fonts/JosefinSans/JosefinSans-Regular.ttf) format('truetype');
+        }
+        
+        @font-face {
+            font-family: 'Aleo Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(../fonts/Aleo-Font/Aleo-Regular.woff2) format('woff2'), url(../fonts/Aleo-Font/Aleo-Regular.woff) format('woff'), url(../fonts/Aleo-Font/Aleo-Regular.ttf) format('truetype');
+        }

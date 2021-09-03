@@ -1,0 +1,17 @@
+.footer {
+    background-color: $black;
+    padding: 100px 0 50px;
+    &__wrapper {
+        text-align: center;
+    }
+    &__text {
+        font-size: 16px;
+        font-family: $josefinsans-regular, $ss;
+        color: $second-white;
+        line-height: 18px;
+        margin-bottom: 30px;
+    }
+    &__logo {
+        margin-bottom: 10px;
+    }
+}

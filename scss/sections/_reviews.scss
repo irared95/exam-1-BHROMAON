@@ -1,0 +1,99 @@
+.reviews {
+    background-image: url(../image/reviews-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 735px;
+    height: 100%;
+    padding: 115px 0 200px;
+    @include breakpoint($mobile-bp) {
+        padding: 100px 0;
+    }
+    &__main {
+        background-color: $third-black;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 100%;
+        @include breakpoint($mobile-bp) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__left {
+        background-image: url(/image/man.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 40%;
+        @include breakpoint($tablet-bp) {
+            background-position: right;
+            background-size: cover;
+        }
+        @include breakpoint($mobile-bp) {
+            margin-bottom: 30px;
+            width: 100%;
+            background-position: bottom;
+            background-size: auto;
+        }
+    }
+    &__right {
+        width: 60%;
+        padding: 50px;
+        @include breakpoint($mobile-bp) {
+            width: 100%;
+            text-align: center;
+            padding: 25px;
+        }
+    }
+    &__head {
+        font-size: 36px;
+        font-family: $aleo-regular, $ss;
+        color: $second-white;
+        line-height: 38px;
+        text-align: center;
+        margin-bottom: 100px;
+        @include breakpoint($mobile-bp) {
+            margin-bottom: 50px;
+            font-size: 28px;
+            line-height: 30px;
+        }
+    }
+    &__title {
+        font-size: 20px;
+        font-family: $josefinsans-regular, $ss;
+        color: $second-white;
+        text-transform: uppercase;
+        line-height: 22px;
+        margin-bottom: 40px;
+        @include breakpoint($mobile-bp) {
+            margin-bottom: 20px;
+        }
+    }
+    &__image {
+        @include breakpoint($mobile-bp) {
+            height: 312px;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        font-family: $josefinsans-regular, $ss;
+        color: $second-white;
+        line-height: 24px;
+        text-align: justify;
+        position: relative;
+        max-width: 574px;
+        text-indent: 30px;
+        @include breakpoint($mobile-bp) {
+            max-width: none;
+        }
+        &:after {
+            content: "❝";
+            font-size: 36px;
+            color: $light-blue;
+            position: absolute;
+            top: 0;
+            left: -30px;
+        }
+    }
+}

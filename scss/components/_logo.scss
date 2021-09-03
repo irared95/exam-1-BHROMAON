@@ -1,0 +1,11 @@
+.logo {
+    &__text {
+        font-size: 24px;
+        font-family: $josefinsans-bold;
+        color: $second-white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 26px;
+        display: inline-block;
+    }
+}

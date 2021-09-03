@@ -1,0 +1,23 @@
+.travel {
+    padding: 230px 0 100px;
+    min-height: 700px;
+    height: 100%;
+    @include breakpoint($mobile-bp) {
+        padding: 100px 0;
+        min-height: auto;
+    }
+    &--bg-first {
+        background-image: url(../image/travel-bg-1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &--bg-second {
+        background-image: url(../image/travel-bg-2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__right {
+        display: flex;
+        justify-content: end;
+    }
+}

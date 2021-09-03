@@ -1,0 +1,84 @@
+.why-choose-us {
+    background-image: url(../image/why-choose-us-bg.png);
+    background-size: cover;
+    min-height: 690px;
+    height: 100%;
+    padding: 115px 0;
+    @include breakpoint($mobile-bp) {
+        padding: 60px 0;
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        @include breakpoint($mobile-bp) {
+            flex-direction: column;
+        }
+    }
+    &__left,
+    &__right {
+        width: 50%;
+        @include breakpoint($mobile-bp) {
+            width: 100%;
+        }
+    }
+    &__left {
+        padding-top: 50px;
+        @include breakpoint($mobile-bp) {
+            padding-bottom: 30px;
+            padding-top: 0;
+        }
+    }
+    &__image {
+        img {
+            display: block;
+            width: 64%;
+            @include breakpoint($mobile-bp) {
+                width: 100%;
+            }
+        }
+        &-top {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            margin-bottom: 5px;
+            @include breakpoint($mobile-bp) {
+                margin-bottom: 20px;
+            }
+        }
+        &-bottom {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: end;
+        }
+    }
+    &__title {
+        font-size: 36px;
+        font-family: $aleo-regular, $ss;
+        color: $second-white;
+        line-height: 38px;
+        margin-bottom: 50px;
+        @include breakpoint($mobile-bp) {
+            font-size: 28px;
+            line-height: 30px;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        font-family: $josefinsans-regular, $ss;
+        color: $dark-white;
+        line-height: 24px;
+        max-width: 530px;
+        text-align: justify;
+        margin-bottom: 45px;
+        @include breakpoint($mobile-bp) {
+            max-width: 100%;
+        }
+        p {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
